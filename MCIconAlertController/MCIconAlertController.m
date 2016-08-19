@@ -58,6 +58,7 @@ static UIColor *buttonTitleColor() {
     }
     
     self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    self.statusBarStyle = UIStatusBarStyleDefault;
     
     return self;
 }
@@ -318,9 +319,13 @@ static UIColor *buttonTitleColor() {
                      }];
 }
 
+- (void)show {
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:self animated:NO completion:nil];
+}
+
 #pragma mark - UIViewController
-//- (UIStatusBarStyle)preferredStatusBarStyle{
-//    return UIStatusBarStyleLightContent;
-//}
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return self.statusBarStyle;
+}
 
 @end

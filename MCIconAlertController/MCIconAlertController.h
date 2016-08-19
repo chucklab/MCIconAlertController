@@ -21,4 +21,8 @@ typedef void (^RightButtonTappedBlock)();
 @property (nonatomic, copy) NSString *leftButtonTitle;
 @property (nonatomic, copy) NSString *rightButtonTitle;
 
+@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
+
+- (void)show;
+
 @end

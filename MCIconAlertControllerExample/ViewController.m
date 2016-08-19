@@ -84,7 +84,7 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:iconAlertController animated:NO completion:nil];
+    [iconAlertController show];
 }
 
 - (void)multiLines {
@@ -100,7 +100,7 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:iconAlertController animated:NO completion:nil];
+    [iconAlertController show];
 }
 
 - (void)longSingleLine {
@@ -117,7 +117,7 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:iconAlertController animated:NO completion:nil];
+    [iconAlertController show];
 }
 
 - (void)veryLongText {
@@ -134,7 +134,7 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:iconAlertController animated:NO completion:nil];
+    [iconAlertController show];
 }
 
 - (void)noMessage {
@@ -150,7 +150,7 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:iconAlertController animated:NO completion:nil];
+    [iconAlertController show];
 }
 
 @end
