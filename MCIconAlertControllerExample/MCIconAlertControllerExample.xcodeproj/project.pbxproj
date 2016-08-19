@@ -98,7 +98,8 @@
 				4C354D5F1D66A95E009E8A94 /* MCIconAlertController.h */,
 				4C354D601D66A95E009E8A94 /* MCIconAlertController.m */,
 			);
-			path = MCIconAlertController;
+			name = MCIconAlertController;
+			path = ../MCIconAlertController;
 			sourceTree = "<group>";
 		};
 		4CF6D6671D66A84600C969C6 = {
