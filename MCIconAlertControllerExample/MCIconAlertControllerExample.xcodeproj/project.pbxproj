@@ -506,7 +506,7 @@
 			baseConfigurationReference = CC7530F4C4E768EA9EAF3B0B /* Pods-MCIconAlertControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Ma (9H888PAC6C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MCIconAlertControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExample;
@@ -519,7 +519,7 @@
 			baseConfigurationReference = 92F24B35EA7E7607DA74E584 /* Pods-MCIconAlertControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Ma (9H888PAC6C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MCIconAlertControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExample;
@@ -532,7 +532,7 @@
 			baseConfigurationReference = CAE7A7005EAA941138B05C44 /* Pods-MCIconAlertControllerExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Ma (9H888PAC6C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MCIconAlertControllerExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExampleTests;
@@ -546,7 +546,7 @@
 			baseConfigurationReference = 691E6E360A60FDD19F5907A6 /* Pods-MCIconAlertControllerExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Ma (9H888PAC6C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MCIconAlertControllerExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExampleTests;
