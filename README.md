@@ -7,6 +7,12 @@ Alert controller with icon, have fun.
 ![Screen-Shot-04-w100](Screenshots/Screen-Shot-04.png)
 ![Screen-Shot-05-w100](Screenshots/Screen-Shot-05.png)
 
+## Install
+Cocoapods:
+```
+pod 'MCIconAlertController', '~> 0.0.1'
+```
+
 ## Usage
 
 ```objc
