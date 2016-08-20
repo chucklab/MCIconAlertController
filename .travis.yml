@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
+xcode_scheme: MCIconAlertControllerExampleTests
