@@ -5,6 +5,7 @@ codecov:
 coverage:
   ignore:
     - "MCIconAlertController"
+    - "Classes/*.m"
   precision: 2
   round: down
   range: "70...100"
