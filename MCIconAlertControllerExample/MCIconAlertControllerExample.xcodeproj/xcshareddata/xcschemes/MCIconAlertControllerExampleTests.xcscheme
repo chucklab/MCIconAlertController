@@ -45,16 +45,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4CF6D66F1D66A84600C969C6"
-            BuildableName = "MCIconAlertControllerExample.app"
-            BlueprintName = "MCIconAlertControllerExample"
-            ReferencedContainer = "container:MCIconAlertControllerExample.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -64,15 +54,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4CF6D66F1D66A84600C969C6"
-            BuildableName = "MCIconAlertControllerExample.app"
-            BlueprintName = "MCIconAlertControllerExample"
-            ReferencedContainer = "container:MCIconAlertControllerExample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
