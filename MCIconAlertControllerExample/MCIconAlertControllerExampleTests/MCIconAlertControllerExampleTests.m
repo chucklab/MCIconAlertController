@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MCIconAlertController.h"
 
 @interface MCIconAlertControllerExampleTests : XCTestCase
 
@@ -34,6 +35,24 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testNormalShow {
+    MCIconAlertController *iconAlertController = [[MCIconAlertController alloc] init];
+    XCTAssert(iconAlertController != nil);
+    iconAlertController.iconImage = [UIImage imageNamed:@"dog.jpg"];
+    iconAlertController.title = @"Rigo";
+    iconAlertController.message = @"Hello there, how are you!";
+    iconAlertController.leftButtonTitle = @"Accept";
+    iconAlertController.rightButtonTitle = @"Ignore";
+    iconAlertController.leftButtonTappedBlock = ^(){
+        NSLog(@"leftButtonTappedBlock");
+    };
+    iconAlertController.rightButtonTappedBlock = ^(){
+        NSLog(@"rightButtonTappedBlock");
+    };
+    [iconAlertController show];
+    XCTAssert(iconAlertController != nil);
 }
 
 @end
