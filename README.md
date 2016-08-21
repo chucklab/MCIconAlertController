@@ -16,11 +16,12 @@ Alert controller with icon, have fun.
 ![Screen-Shot-04-w100](Screenshots/Screen-Shot-04.png)
 ![Screen-Shot-05-w100](Screenshots/Screen-Shot-05.png)
 
-## Install
-Cocoapods:
-```
-pod 'MCIconAlertController', '~> 0.0.1'
-```
+## Installation
+### Cocoapods:
+
+1. Add `pod 'MCIconAlertController', '~> 0.0.1'` to your Podfile.
+2. Run `pod install` or `pod update`.
+3. Import \<MCIconAlertController.h\>.
 
 ## Usage
 
@@ -40,4 +41,9 @@ iconAlertController.rightButtonTappedBlock = ^(){
 [iconAlertController show];
 ```
 
+## Requirements
+This library requires a deployment target of iOS 6.0 or greater.
+
+## License
+MCIconAlertController is provided under the MIT license. See LICENSE file for details.
 
