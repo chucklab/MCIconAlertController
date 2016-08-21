@@ -12,5 +12,5 @@ script:
     -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
     -scheme MCIconAlertControllerExample
     -sdk iphonesimulator
-    -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
+    -launch-timeout 400
     test
