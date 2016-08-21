@@ -7,11 +7,15 @@ notifications:
     email: false
 #script: script/cibuild
 script:
-- xctool
-    -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
-    -scheme MCIconAlertControllerExample
-    -sdk iphonesimulator
-    build
-    test
-    CODE_SIGN_IDENTITY=""
-    CODE_SIGNING_REQUIRED=NO
+    - xctool
+      -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
+      -scheme MCIconAlertControllerExample
+      -sdk iphonesimulator
+      build
+      test
+      CODE_SIGN_IDENTITY=""
+      CODE_SIGNING_REQUIRED=NO
+      GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
+      GCC_GENERATE_TEST_COVERAGE_FILES=YES
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
