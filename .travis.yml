@@ -13,6 +13,5 @@ script:
     -scheme MCIconAlertControllerExample
     -sdk iphonesimulator
     -launch-timeout 400
-    #test
     build-tests
     run-tests
