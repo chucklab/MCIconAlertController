@@ -5,7 +5,6 @@ xcode_scheme: MCIconAlertControllerExample
 podfile: MCIconAlertControllerExample/Podfile
 notifications:
     email: false
-#script: script/cibuild
 script:
     - xctool
       -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
