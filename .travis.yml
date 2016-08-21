@@ -2,9 +2,6 @@ language: objective-c
 osx_image: xcode7
 xcode_workspace: MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
 xcode_scheme: MCIconAlertControllerExample
-before_install:
-    - brew update
-    - brew install xctool
 podfile: MCIconAlertControllerExample/Podfile
 notifications:
     email: false
