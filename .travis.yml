@@ -5,10 +5,10 @@ notifications:
     email: false
 #script: script/cibuild
 script:
-    xctool
-    -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
-    -scheme MCIconAlertControllerExampleTests    
-    -sdk iphonesimulator
-    -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
-    build 
+    xctool \
+    -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace \
+    -scheme MCIconAlertControllerExampleTests \
+    -sdk iphonesimulator \
+    -destination 'platform=iOS Simulator,name=iPhone 6 Plus' \
+    build \
     test
