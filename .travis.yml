@@ -1,4 +1,5 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_workspace: MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
-xcode_scheme: MCIconAlertControllerExampleTests
+script: script/cibuild
+notifications:
+  email: false    

@@ -1,0 +1,3 @@
+xctool \
+  -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace \
+  -scheme MCIconAlertControllerExampleTests
