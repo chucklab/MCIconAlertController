@@ -7,165 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48B7187D1C43483065DDE054 /* libPods-MCIconAlertControllerExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4D1BB68E5C8DC6BAA92F6D /* libPods-MCIconAlertControllerExampleTests.a */; };
-		4C354D611D66A95E009E8A94 /* MCIconAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C354D601D66A95E009E8A94 /* MCIconAlertController.m */; };
-		4C354D631D66B83B009E8A94 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C354D621D66B83B009E8A94 /* dog.jpg */; };
-		4C354D661D66D08F009E8A94 /* AlertsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C354D651D66D08F009E8A94 /* AlertsTableView.m */; };
-		4C354D691D66D351009E8A94 /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C354D681D66D351009E8A94 /* AlertTableViewCell.m */; };
-		4CF6D6751D66A84700C969C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6D6741D66A84700C969C6 /* main.m */; };
-		4CF6D6781D66A84700C969C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6D6771D66A84700C969C6 /* AppDelegate.m */; };
-		4CF6D67B1D66A84700C969C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6D67A1D66A84700C969C6 /* ViewController.m */; };
-		4CF6D67E1D66A84700C969C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF6D67C1D66A84700C969C6 /* Main.storyboard */; };
-		4CF6D6801D66A84700C969C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF6D67F1D66A84700C969C6 /* Assets.xcassets */; };
-		4CF6D6831D66A84700C969C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF6D6811D66A84700C969C6 /* LaunchScreen.storyboard */; };
-		4CF6D68E1D66A84700C969C6 /* MCIconAlertControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF6D68D1D66A84700C969C6 /* MCIconAlertControllerExampleTests.m */; };
-		C2DEB234D7C81BB52E2FA87A /* libPods-MCIconAlertControllerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA9491A84FB074BC03B1457 /* libPods-MCIconAlertControllerExample.a */; };
+		4C52D8831D69D8B200344750 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C52D8821D69D8B200344750 /* main.m */; };
+		4C52D8861D69D8B200344750 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C52D8851D69D8B200344750 /* AppDelegate.m */; };
+		4C52D8891D69D8B200344750 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C52D8881D69D8B200344750 /* ViewController.m */; };
+		4C52D88C1D69D8B200344750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C52D88A1D69D8B200344750 /* Main.storyboard */; };
+		4C52D88E1D69D8B200344750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C52D88D1D69D8B200344750 /* Assets.xcassets */; };
+		4C52D8911D69D8B200344750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C52D88F1D69D8B200344750 /* LaunchScreen.storyboard */; };
+		4C93DCFD1D69DA90009ABD45 /* MCIconAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93DCFC1D69DA90009ABD45 /* MCIconAlertController.m */; };
+		4C93DD031D69DBD1009ABD45 /* AlertsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93DCFF1D69DBD1009ABD45 /* AlertsTableView.m */; };
+		4C93DD041D69DBD1009ABD45 /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93DD011D69DBD1009ABD45 /* AlertTableViewCell.m */; };
+		4C93DD051D69DBD1009ABD45 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C93DD021D69DBD1009ABD45 /* dog.jpg */; };
+		6E5E95F591627B55BB1C969A /* libPods-MCIconAlertControllerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 830445B7A7F5F0B276A5BB73 /* libPods-MCIconAlertControllerExample.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4CF6D68A1D66A84700C969C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CF6D6681D66A84600C969C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CF6D66F1D66A84600C969C6;
-			remoteInfo = MCIconAlertControllerExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		4C354D5F1D66A95E009E8A94 /* MCIconAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCIconAlertController.h; sourceTree = "<group>"; };
-		4C354D601D66A95E009E8A94 /* MCIconAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCIconAlertController.m; sourceTree = "<group>"; };
-		4C354D621D66B83B009E8A94 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
-		4C354D641D66D08F009E8A94 /* AlertsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertsTableView.h; sourceTree = "<group>"; };
-		4C354D651D66D08F009E8A94 /* AlertsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertsTableView.m; sourceTree = "<group>"; };
-		4C354D671D66D351009E8A94 /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
-		4C354D681D66D351009E8A94 /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
-		4CF6D6701D66A84700C969C6 /* MCIconAlertControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCIconAlertControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CF6D6741D66A84700C969C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CF6D6761D66A84700C969C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4CF6D6771D66A84700C969C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CF6D6791D66A84700C969C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CF6D67A1D66A84700C969C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4CF6D67D1D66A84700C969C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CF6D67F1D66A84700C969C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CF6D6821D66A84700C969C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4CF6D6841D66A84700C969C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CF6D6891D66A84700C969C6 /* MCIconAlertControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCIconAlertControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CF6D68D1D66A84700C969C6 /* MCIconAlertControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCIconAlertControllerExampleTests.m; sourceTree = "<group>"; };
-		4CF6D68F1D66A84700C969C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		691E6E360A60FDD19F5907A6 /* Pods-MCIconAlertControllerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExampleTests/Pods-MCIconAlertControllerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		92F24B35EA7E7607DA74E584 /* Pods-MCIconAlertControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample.release.xcconfig"; sourceTree = "<group>"; };
-		AB4D1BB68E5C8DC6BAA92F6D /* libPods-MCIconAlertControllerExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCIconAlertControllerExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACA9491A84FB074BC03B1457 /* libPods-MCIconAlertControllerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCIconAlertControllerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAE7A7005EAA941138B05C44 /* Pods-MCIconAlertControllerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExampleTests/Pods-MCIconAlertControllerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CC7530F4C4E768EA9EAF3B0B /* Pods-MCIconAlertControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		4C52D87E1D69D8B200344750 /* MCIconAlertControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCIconAlertControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C52D8821D69D8B200344750 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C52D8841D69D8B200344750 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C52D8851D69D8B200344750 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C52D8871D69D8B200344750 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C52D8881D69D8B200344750 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C52D88B1D69D8B200344750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C52D88D1D69D8B200344750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C52D8901D69D8B200344750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C52D8921D69D8B200344750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C93DCFB1D69DA90009ABD45 /* MCIconAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCIconAlertController.h; sourceTree = "<group>"; };
+		4C93DCFC1D69DA90009ABD45 /* MCIconAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCIconAlertController.m; sourceTree = "<group>"; };
+		4C93DCFE1D69DBD1009ABD45 /* AlertsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertsTableView.h; sourceTree = "<group>"; };
+		4C93DCFF1D69DBD1009ABD45 /* AlertsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertsTableView.m; sourceTree = "<group>"; };
+		4C93DD001D69DBD1009ABD45 /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
+		4C93DD011D69DBD1009ABD45 /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
+		4C93DD021D69DBD1009ABD45 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		6B49D037DA6643BA54086C70 /* Pods-MCIconAlertControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample.release.xcconfig"; sourceTree = "<group>"; };
+		830445B7A7F5F0B276A5BB73 /* libPods-MCIconAlertControllerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCIconAlertControllerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9A9EAAA37D329E5E233EEC /* Pods-MCIconAlertControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4CF6D66D1D66A84600C969C6 /* Frameworks */ = {
+		4C52D87B1D69D8B200344750 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DEB234D7C81BB52E2FA87A /* libPods-MCIconAlertControllerExample.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CF6D6861D66A84700C969C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48B7187D1C43483065DDE054 /* libPods-MCIconAlertControllerExampleTests.a in Frameworks */,
+				6E5E95F591627B55BB1C969A /* libPods-MCIconAlertControllerExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26A4D8AF38C39342E39A1BB8 /* Pods */ = {
+		04C25D3495D0154AEABD7C11 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CC7530F4C4E768EA9EAF3B0B /* Pods-MCIconAlertControllerExample.debug.xcconfig */,
-				92F24B35EA7E7607DA74E584 /* Pods-MCIconAlertControllerExample.release.xcconfig */,
-				CAE7A7005EAA941138B05C44 /* Pods-MCIconAlertControllerExampleTests.debug.xcconfig */,
-				691E6E360A60FDD19F5907A6 /* Pods-MCIconAlertControllerExampleTests.release.xcconfig */,
+				BE9A9EAAA37D329E5E233EEC /* Pods-MCIconAlertControllerExample.debug.xcconfig */,
+				6B49D037DA6643BA54086C70 /* Pods-MCIconAlertControllerExample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4C354D5E1D66A911009E8A94 /* MCIconAlertController */ = {
+		4C52D8751D69D8B200344750 = {
 			isa = PBXGroup;
 			children = (
-				4C354D5F1D66A95E009E8A94 /* MCIconAlertController.h */,
-				4C354D601D66A95E009E8A94 /* MCIconAlertController.m */,
-			);
-			name = MCIconAlertController;
-			path = ../MCIconAlertController;
-			sourceTree = "<group>";
-		};
-		4CF6D6671D66A84600C969C6 = {
-			isa = PBXGroup;
-			children = (
-				4C354D5E1D66A911009E8A94 /* MCIconAlertController */,
-				4CF6D6721D66A84700C969C6 /* MCIconAlertControllerExample */,
-				4CF6D68C1D66A84700C969C6 /* MCIconAlertControllerExampleTests */,
-				4CF6D6711D66A84700C969C6 /* Products */,
-				26A4D8AF38C39342E39A1BB8 /* Pods */,
-				653CA6A98AD831048A344C93 /* Frameworks */,
+				4C93DCFA1D69DA90009ABD45 /* Classes */,
+				4C52D8801D69D8B200344750 /* MCIconAlertControllerExample */,
+				4C52D87F1D69D8B200344750 /* Products */,
+				04C25D3495D0154AEABD7C11 /* Pods */,
+				9B9F71FAEF4A9D8EC61AB585 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4CF6D6711D66A84700C969C6 /* Products */ = {
+		4C52D87F1D69D8B200344750 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CF6D6701D66A84700C969C6 /* MCIconAlertControllerExample.app */,
-				4CF6D6891D66A84700C969C6 /* MCIconAlertControllerExampleTests.xctest */,
+				4C52D87E1D69D8B200344750 /* MCIconAlertControllerExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4CF6D6721D66A84700C969C6 /* MCIconAlertControllerExample */ = {
+		4C52D8801D69D8B200344750 /* MCIconAlertControllerExample */ = {
 			isa = PBXGroup;
 			children = (
-				4CF6D6761D66A84700C969C6 /* AppDelegate.h */,
-				4CF6D6771D66A84700C969C6 /* AppDelegate.m */,
-				4CF6D6791D66A84700C969C6 /* ViewController.h */,
-				4CF6D67A1D66A84700C969C6 /* ViewController.m */,
-				4C354D641D66D08F009E8A94 /* AlertsTableView.h */,
-				4C354D651D66D08F009E8A94 /* AlertsTableView.m */,
-				4C354D671D66D351009E8A94 /* AlertTableViewCell.h */,
-				4C354D681D66D351009E8A94 /* AlertTableViewCell.m */,
-				4CF6D67C1D66A84700C969C6 /* Main.storyboard */,
-				4C354D621D66B83B009E8A94 /* dog.jpg */,
-				4CF6D67F1D66A84700C969C6 /* Assets.xcassets */,
-				4CF6D6811D66A84700C969C6 /* LaunchScreen.storyboard */,
-				4CF6D6841D66A84700C969C6 /* Info.plist */,
-				4CF6D6731D66A84700C969C6 /* Supporting Files */,
+				4C52D8841D69D8B200344750 /* AppDelegate.h */,
+				4C52D8851D69D8B200344750 /* AppDelegate.m */,
+				4C52D8871D69D8B200344750 /* ViewController.h */,
+				4C52D8881D69D8B200344750 /* ViewController.m */,
+				4C93DCFE1D69DBD1009ABD45 /* AlertsTableView.h */,
+				4C93DCFF1D69DBD1009ABD45 /* AlertsTableView.m */,
+				4C93DD001D69DBD1009ABD45 /* AlertTableViewCell.h */,
+				4C93DD011D69DBD1009ABD45 /* AlertTableViewCell.m */,
+				4C93DD021D69DBD1009ABD45 /* dog.jpg */,
+				4C52D88A1D69D8B200344750 /* Main.storyboard */,
+				4C52D88D1D69D8B200344750 /* Assets.xcassets */,
+				4C52D88F1D69D8B200344750 /* LaunchScreen.storyboard */,
+				4C52D8921D69D8B200344750 /* Info.plist */,
+				4C52D8811D69D8B200344750 /* Supporting Files */,
 			);
 			path = MCIconAlertControllerExample;
 			sourceTree = "<group>";
 		};
-		4CF6D6731D66A84700C969C6 /* Supporting Files */ = {
+		4C52D8811D69D8B200344750 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4CF6D6741D66A84700C969C6 /* main.m */,
+				4C52D8821D69D8B200344750 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4CF6D68C1D66A84700C969C6 /* MCIconAlertControllerExampleTests */ = {
+		4C93DCFA1D69DA90009ABD45 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4CF6D68D1D66A84700C969C6 /* MCIconAlertControllerExampleTests.m */,
-				4CF6D68F1D66A84700C969C6 /* Info.plist */,
+				4C93DCFB1D69DA90009ABD45 /* MCIconAlertController.h */,
+				4C93DCFC1D69DA90009ABD45 /* MCIconAlertController.m */,
 			);
-			path = MCIconAlertControllerExampleTests;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
-		653CA6A98AD831048A344C93 /* Frameworks */ = {
+		9B9F71FAEF4A9D8EC61AB585 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACA9491A84FB074BC03B1457 /* libPods-MCIconAlertControllerExample.a */,
-				AB4D1BB68E5C8DC6BAA92F6D /* libPods-MCIconAlertControllerExampleTests.a */,
+				830445B7A7F5F0B276A5BB73 /* libPods-MCIconAlertControllerExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,16 +133,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CF6D66F1D66A84600C969C6 /* MCIconAlertControllerExample */ = {
+		4C52D87D1D69D8B200344750 /* MCIconAlertControllerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CF6D6921D66A84700C969C6 /* Build configuration list for PBXNativeTarget "MCIconAlertControllerExample" */;
+			buildConfigurationList = 4C52D8951D69D8B200344750 /* Build configuration list for PBXNativeTarget "MCIconAlertControllerExample" */;
 			buildPhases = (
-				11154CD5F3DA0875034C8909 /* [CP] Check Pods Manifest.lock */,
-				4CF6D66C1D66A84600C969C6 /* Sources */,
-				4CF6D66D1D66A84600C969C6 /* Frameworks */,
-				4CF6D66E1D66A84600C969C6 /* Resources */,
-				3A97B85A96583CC448F5625C /* [CP] Embed Pods Frameworks */,
-				DBB86909A5925D45B77B1131 /* [CP] Copy Pods Resources */,
+				00FF45F63A9526781819699F /* [CP] Check Pods Manifest.lock */,
+				4C52D87A1D69D8B200344750 /* Sources */,
+				4C52D87B1D69D8B200344750 /* Frameworks */,
+				4C52D87C1D69D8B200344750 /* Resources */,
+				047FCB9EDB1AE1835A8F66B0 /* [CP] Embed Pods Frameworks */,
+				2356CD1F5BBB1CB00159C655 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,50 +150,24 @@
 			);
 			name = MCIconAlertControllerExample;
 			productName = MCIconAlertControllerExample;
-			productReference = 4CF6D6701D66A84700C969C6 /* MCIconAlertControllerExample.app */;
+			productReference = 4C52D87E1D69D8B200344750 /* MCIconAlertControllerExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4CF6D6881D66A84700C969C6 /* MCIconAlertControllerExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4CF6D6951D66A84700C969C6 /* Build configuration list for PBXNativeTarget "MCIconAlertControllerExampleTests" */;
-			buildPhases = (
-				B37F2D9EE2AE6D1C226D49BC /* [CP] Check Pods Manifest.lock */,
-				4CF6D6851D66A84700C969C6 /* Sources */,
-				4CF6D6861D66A84700C969C6 /* Frameworks */,
-				4CF6D6871D66A84700C969C6 /* Resources */,
-				EA5A419FDBBBFD6FF3A91011 /* [CP] Embed Pods Frameworks */,
-				425DA2E815DE77B9A987BDBF /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4CF6D68B1D66A84700C969C6 /* PBXTargetDependency */,
-			);
-			name = MCIconAlertControllerExampleTests;
-			productName = MCIconAlertControllerExampleTests;
-			productReference = 4CF6D6891D66A84700C969C6 /* MCIconAlertControllerExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4CF6D6681D66A84600C969C6 /* Project object */ = {
+		4C52D8761D69D8B200344750 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "iMegatron's Lab";
 				TargetAttributes = {
-					4CF6D66F1D66A84600C969C6 = {
+					4C52D87D1D69D8B200344750 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					4CF6D6881D66A84700C969C6 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 4CF6D66F1D66A84600C969C6;
 					};
 				};
 			};
-			buildConfigurationList = 4CF6D66B1D66A84600C969C6 /* Build configuration list for PBXProject "MCIconAlertControllerExample" */;
+			buildConfigurationList = 4C52D8791D69D8B200344750 /* Build configuration list for PBXProject "MCIconAlertControllerExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,40 +175,32 @@
 				en,
 				Base,
 			);
-			mainGroup = 4CF6D6671D66A84600C969C6;
-			productRefGroup = 4CF6D6711D66A84700C969C6 /* Products */;
+			mainGroup = 4C52D8751D69D8B200344750;
+			productRefGroup = 4C52D87F1D69D8B200344750 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CF6D66F1D66A84600C969C6 /* MCIconAlertControllerExample */,
-				4CF6D6881D66A84700C969C6 /* MCIconAlertControllerExampleTests */,
+				4C52D87D1D69D8B200344750 /* MCIconAlertControllerExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4CF6D66E1D66A84600C969C6 /* Resources */ = {
+		4C52D87C1D69D8B200344750 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C354D631D66B83B009E8A94 /* dog.jpg in Resources */,
-				4CF6D6831D66A84700C969C6 /* LaunchScreen.storyboard in Resources */,
-				4CF6D6801D66A84700C969C6 /* Assets.xcassets in Resources */,
-				4CF6D67E1D66A84700C969C6 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CF6D6871D66A84700C969C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4C93DD051D69DBD1009ABD45 /* dog.jpg in Resources */,
+				4C52D8911D69D8B200344750 /* LaunchScreen.storyboard in Resources */,
+				4C52D88E1D69D8B200344750 /* Assets.xcassets in Resources */,
+				4C52D88C1D69D8B200344750 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11154CD5F3DA0875034C8909 /* [CP] Check Pods Manifest.lock */ = {
+		00FF45F63A9526781819699F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,7 +215,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3A97B85A96583CC448F5625C /* [CP] Embed Pods Frameworks */ = {
+		047FCB9EDB1AE1835A8F66B0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,37 +230,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		425DA2E815DE77B9A987BDBF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCIconAlertControllerExampleTests/Pods-MCIconAlertControllerExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B37F2D9EE2AE6D1C226D49BC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DBB86909A5925D45B77B1131 /* [CP] Copy Pods Resources */ = {
+		2356CD1F5BBB1CB00159C655 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,68 +245,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA5A419FDBBBFD6FF3A91011 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MCIconAlertControllerExampleTests/Pods-MCIconAlertControllerExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4CF6D66C1D66A84600C969C6 /* Sources */ = {
+		4C52D87A1D69D8B200344750 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C354D661D66D08F009E8A94 /* AlertsTableView.m in Sources */,
-				4CF6D67B1D66A84700C969C6 /* ViewController.m in Sources */,
-				4C354D691D66D351009E8A94 /* AlertTableViewCell.m in Sources */,
-				4CF6D6781D66A84700C969C6 /* AppDelegate.m in Sources */,
-				4CF6D6751D66A84700C969C6 /* main.m in Sources */,
-				4C354D611D66A95E009E8A94 /* MCIconAlertController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CF6D6851D66A84700C969C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4CF6D68E1D66A84700C969C6 /* MCIconAlertControllerExampleTests.m in Sources */,
+				4C93DD031D69DBD1009ABD45 /* AlertsTableView.m in Sources */,
+				4C52D8891D69D8B200344750 /* ViewController.m in Sources */,
+				4C93DD041D69DBD1009ABD45 /* AlertTableViewCell.m in Sources */,
+				4C52D8861D69D8B200344750 /* AppDelegate.m in Sources */,
+				4C52D8831D69D8B200344750 /* main.m in Sources */,
+				4C93DCFD1D69DA90009ABD45 /* MCIconAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4CF6D68B1D66A84700C969C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4CF6D66F1D66A84600C969C6 /* MCIconAlertControllerExample */;
-			targetProxy = 4CF6D68A1D66A84700C969C6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		4CF6D67C1D66A84700C969C6 /* Main.storyboard */ = {
+		4C52D88A1D69D8B200344750 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CF6D67D1D66A84700C969C6 /* Base */,
+				4C52D88B1D69D8B200344750 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4CF6D6811D66A84700C969C6 /* LaunchScreen.storyboard */ = {
+		4C52D88F1D69D8B200344750 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CF6D6821D66A84700C969C6 /* Base */,
+				4C52D8901D69D8B200344750 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -418,7 +283,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4CF6D6901D66A84700C969C6 /* Debug */ = {
+		4C52D8931D69D8B200344750 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -436,8 +301,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -463,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		4CF6D6911D66A84700C969C6 /* Release */ = {
+		4C52D8941D69D8B200344750 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -481,8 +345,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -502,9 +365,9 @@
 			};
 			name = Release;
 		};
-		4CF6D6931D66A84700C969C6 /* Debug */ = {
+		4C52D8961D69D8B200344750 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC7530F4C4E768EA9EAF3B0B /* Pods-MCIconAlertControllerExample.debug.xcconfig */;
+			baseConfigurationReference = BE9A9EAAA37D329E5E233EEC /* Pods-MCIconAlertControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MCIconAlertControllerExample/Info.plist;
@@ -514,75 +377,40 @@
 			};
 			name = Debug;
 		};
-		4CF6D6941D66A84700C969C6 /* Release */ = {
+		4C52D8971D69D8B200344750 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F24B35EA7E7607DA74E584 /* Pods-MCIconAlertControllerExample.release.xcconfig */;
+			baseConfigurationReference = 6B49D037DA6643BA54086C70 /* Pods-MCIconAlertControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MCIconAlertControllerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		4CF6D6961D66A84700C969C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAE7A7005EAA941138B05C44 /* Pods-MCIconAlertControllerExampleTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MCIconAlertControllerExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCIconAlertControllerExample.app/MCIconAlertControllerExample";
-			};
-			name = Debug;
-		};
-		4CF6D6971D66A84700C969C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 691E6E360A60FDD19F5907A6 /* Pods-MCIconAlertControllerExampleTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MCIconAlertControllerExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imegatron.MCIconAlertControllerExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCIconAlertControllerExample.app/MCIconAlertControllerExample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CF6D66B1D66A84600C969C6 /* Build configuration list for PBXProject "MCIconAlertControllerExample" */ = {
+		4C52D8791D69D8B200344750 /* Build configuration list for PBXProject "MCIconAlertControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CF6D6901D66A84700C969C6 /* Debug */,
-				4CF6D6911D66A84700C969C6 /* Release */,
+				4C52D8931D69D8B200344750 /* Debug */,
+				4C52D8941D69D8B200344750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CF6D6921D66A84700C969C6 /* Build configuration list for PBXNativeTarget "MCIconAlertControllerExample" */ = {
+		4C52D8951D69D8B200344750 /* Build configuration list for PBXNativeTarget "MCIconAlertControllerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4CF6D6931D66A84700C969C6 /* Debug */,
-				4CF6D6941D66A84700C969C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4CF6D6951D66A84700C969C6 /* Build configuration list for PBXNativeTarget "MCIconAlertControllerExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CF6D6961D66A84700C969C6 /* Debug */,
-				4CF6D6971D66A84700C969C6 /* Release */,
+				4C52D8961D69D8B200344750 /* Debug */,
+				4C52D8971D69D8B200344750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4CF6D6681D66A84600C969C6 /* Project object */;
+	rootObject = 4C52D8761D69D8B200344750 /* Project object */;
 }

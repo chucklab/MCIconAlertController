@@ -1,19 +1,19 @@
 //
-//  MCIconAlertControllerExampleTests.m
-//  MCIconAlertControllerExampleTests
+//  MCIconAlertControllerTests.m
+//  MCIconAlertControllerTests
 //
-//  Created by Chao Ma on 08/19/2016.
+//  Created by Chao Ma on 2016-08-21.
 //  Copyright © 2016 iMegatron's Lab. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 #import "MCIconAlertController.h"
 
-@interface MCIconAlertControllerExampleTests : XCTestCase
+@interface MCIconAlertControllerTests : XCTestCase
 
 @end
 
-@implementation MCIconAlertControllerExampleTests
+@implementation MCIconAlertControllerTests
 
 - (void)setUp {
     [super setUp];
@@ -54,5 +54,6 @@
     [iconAlertController show];
     XCTAssert(iconAlertController != nil);
 }
+
 
 @end

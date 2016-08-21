@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.source       = { :git => "https://github.com/imegatron/MCIconAlertController.git", :tag => "#{s.version}" }
-  s.source_files  = "MCIconAlertController"
+  s.source_files  = "Classes"
   s.exclude_files = "Classes/Exclude"
   s.frameworks = "Foundation", "UIKit"
   s.requires_arc = true

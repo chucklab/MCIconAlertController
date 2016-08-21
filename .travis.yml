@@ -1,14 +1,14 @@
 language: objective-c
 osx_image: xcode7
-xcode_workspace: MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
-xcode_scheme: MCIconAlertControllerExample
-podfile: MCIconAlertControllerExample/Podfile
+xcode_workspace: MCIconAlertController/MCIconAlertController.xcworkspace
+xcode_scheme: MCIconAlertController
+podfile: MCIconAlertController/Podfile
 notifications:
     email: false
 script:
     - xctool
-      -workspace MCIconAlertControllerExample/MCIconAlertControllerExample.xcworkspace
-      -scheme MCIconAlertControllerExample
+      -workspace MCIconAlertController/MCIconAlertController.xcworkspace
+      -scheme MCIconAlertController
       -sdk iphonesimulator
       build
       test
