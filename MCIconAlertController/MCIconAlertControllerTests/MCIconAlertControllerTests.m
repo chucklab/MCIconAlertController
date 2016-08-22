@@ -59,9 +59,10 @@
 }
 
 - (void)testManager {
-    XCTAssert([MCIconAlertControllerManager sharedInstance]);
-    [[MCIconAlertControllerManager sharedInstance].iconAlertControllerWindows addObject:[UIWindow new]];
-    XCTAssert([MCIconAlertControllerManager sharedInstance].iconAlertControllerWindows);
+    MCIconAlertControllerManager *iconAlertControllerManager = [MCIconAlertControllerManager sharedInstance];
+    XCTAssert(iconAlertControllerManager);
+    [iconAlertControllerManager.iconAlertControllerWindows addObject:[UIWindow new]];
+    XCTAssert(iconAlertControllerManager.iconAlertControllerWindows);
 }
 
 
