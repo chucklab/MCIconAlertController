@@ -23,6 +23,12 @@ Alert controller with icon, have fun.
 2. Run `pod install` or `pod update`.
 3. Import \<MCIconAlertController.h\>.
 
+### Carthage:
+
+1. Add `github "imegatron/MCIconAlertController"` to your Cartfile.
+2. Run `carthage update --platform ios` and add the framework to your project.
+3. Import \<MCIconAlertController/MCIconAlertController.h\>.
+
 ## Usage
 
 ```objc
