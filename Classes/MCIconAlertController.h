@@ -6,15 +6,17 @@
 //  Copyright © 2016 iMegatron's Lab. All rights reserved.
 //
 
-typedef void (^LeftButtonTappedBlock)();
-typedef void (^RightButtonTappedBlock)();
+typedef void (^MCLeftButtonTappedBlock)();
+typedef void (^MCRightButtonTappedBlock)();
+typedef void (^MCPageDidClosedBlock)();
 
 #import <UIKit/UIKit.h>
 
 @interface MCIconAlertController : UIViewController
 
-@property (nonatomic, copy) LeftButtonTappedBlock leftButtonTappedBlock;
-@property (nonatomic, copy) RightButtonTappedBlock rightButtonTappedBlock;
+@property (nonatomic, copy) MCLeftButtonTappedBlock leftButtonTappedBlock;
+@property (nonatomic, copy) MCRightButtonTappedBlock rightButtonTappedBlock;
+@property (nonatomic, copy) MCPageDidClosedBlock pageDidClosedBlock;
 
 @property (nonatomic, strong) UIImage *iconImage;
 @property (nonatomic, copy) NSString *message;

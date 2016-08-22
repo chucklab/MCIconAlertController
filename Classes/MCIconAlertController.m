@@ -9,6 +9,7 @@
 
 #import "MCIconAlertController.h"
 #import "Masonry.h"
+#import "MCIconAlertControllerManager.h"
 
 // Colors
 #define UIColorFromRGB(rgbValue) \
@@ -35,6 +36,11 @@ static UIColor *buttonTitleColor() {
     return UIColorFromRGB(0x337af0);
 }
 
+static const CGFloat MinBackgroundAlpha = .01f;
+static const CGFloat MaxBackgroundAlpha = .2f;
+
+static const CGFloat MinContentAlpha = .01f;
+static const CGFloat MaxContentAlpha = 1.f;
 
 @interface MCIconAlertController ()
 
@@ -100,7 +106,7 @@ static UIColor *buttonTitleColor() {
         make.edges.equalTo(alphaBackground.superview);
     }];
     alphaBackground.backgroundColor = UIColorFromRGB(0x000000);
-    alphaBackground.alpha = .5f;
+    alphaBackground.alpha = MinBackgroundAlpha;
     
     return _alphaBackground;
 }
@@ -278,36 +284,36 @@ static UIColor *buttonTitleColor() {
 
 #pragma mark - Animations.
 - (void)popOutAnimation {
-    self.alphaBackground.alpha = .1;
-    self.contentView.alpha = .1;
+    self.alphaBackground.alpha = MinBackgroundAlpha;
+    self.contentView.alpha = MinContentAlpha;
     self.contentView.transform = CGAffineTransformMakeScale(.5, .5);
     [UIView animateWithDuration:.4
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         self.alphaBackground.alpha = .5;
+                         self.alphaBackground.alpha = MaxBackgroundAlpha;
                      }completion:^(BOOL finished){
                      }];
     [UIView animateWithDuration:.2
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         self.contentView.alpha = 1.0;
+                         self.contentView.alpha = MaxContentAlpha;
                          self.contentView.transform = CGAffineTransformMakeScale(1, 1);
                      }completion:^(BOOL finished){
                      }];
 }
 
 - (void)dismissAnimationWithCompletion:(void (^)())completion {
-    self.alphaBackground.alpha = .5;
-    self.contentView.alpha = 1.0;
+    self.alphaBackground.alpha = MaxBackgroundAlpha;
+    self.contentView.alpha = MaxContentAlpha;
     self.contentView.transform = CGAffineTransformMakeScale(1, 1);
     [UIView animateWithDuration:.2
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         self.alphaBackground.alpha = .1;
-                         self.contentView.alpha = .1;
+                         self.alphaBackground.alpha = MinBackgroundAlpha;
+                         self.contentView.alpha = MinContentAlpha;
                          self.contentView.transform = CGAffineTransformMakeScale(.5, .5);
                      }completion:^(BOOL finished){
                          self.alphaBackground.hidden = YES;
@@ -315,11 +321,9 @@ static UIColor *buttonTitleColor() {
                          
                          [self dismissViewControllerAnimated:NO completion:nil];
                          
-                         /*
-                          if (self.pageDidClosedBlock) {
-                          self.pageDidClosedBlock();
-                          }
-                          */
+                         if (self.pageDidClosedBlock) {
+                             self.pageDidClosedBlock();
+                         }
                          
                          if (completion) {
                              completion();
@@ -328,7 +332,16 @@ static UIColor *buttonTitleColor() {
 }
 
 - (void)show {
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:self animated:NO completion:nil];
+    UIWindow *window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    __weak typeof(window) weakWindow = window;
+    window.rootViewController = self;
+    [window makeKeyAndVisible];
+    [[MCIconAlertControllerManager sharedInstance].iconAlertControllerWindows addObject:window];
+    
+    self.pageDidClosedBlock = ^{
+        weakWindow.hidden = YES;
+        [[MCIconAlertControllerManager sharedInstance].iconAlertControllerWindows removeObject:weakWindow];
+    };
 }
 
 #pragma mark - UIViewController

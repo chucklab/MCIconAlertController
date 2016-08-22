@@ -17,6 +17,7 @@
 		4C93DD031D69DBD1009ABD45 /* AlertsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93DCFF1D69DBD1009ABD45 /* AlertsTableView.m */; };
 		4C93DD041D69DBD1009ABD45 /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C93DD011D69DBD1009ABD45 /* AlertTableViewCell.m */; };
 		4C93DD051D69DBD1009ABD45 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C93DD021D69DBD1009ABD45 /* dog.jpg */; };
+		4CAA02721D6ADB920090BF1F /* MCIconAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA02711D6ADB920090BF1F /* MCIconAlertControllerManager.m */; };
 		6E5E95F591627B55BB1C969A /* libPods-MCIconAlertControllerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 830445B7A7F5F0B276A5BB73 /* libPods-MCIconAlertControllerExample.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		4C93DD001D69DBD1009ABD45 /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
 		4C93DD011D69DBD1009ABD45 /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
 		4C93DD021D69DBD1009ABD45 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		4CAA02701D6ADB920090BF1F /* MCIconAlertControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCIconAlertControllerManager.h; sourceTree = "<group>"; };
+		4CAA02711D6ADB920090BF1F /* MCIconAlertControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCIconAlertControllerManager.m; sourceTree = "<group>"; };
 		6B49D037DA6643BA54086C70 /* Pods-MCIconAlertControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample.release.xcconfig"; sourceTree = "<group>"; };
 		830445B7A7F5F0B276A5BB73 /* libPods-MCIconAlertControllerExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCIconAlertControllerExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9A9EAAA37D329E5E233EEC /* Pods-MCIconAlertControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerExample/Pods-MCIconAlertControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 		4C93DCFA1D69DA90009ABD45 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA02701D6ADB920090BF1F /* MCIconAlertControllerManager.h */,
+				4CAA02711D6ADB920090BF1F /* MCIconAlertControllerManager.m */,
 				4C93DCFB1D69DA90009ABD45 /* MCIconAlertController.h */,
 				4C93DCFC1D69DA90009ABD45 /* MCIconAlertController.m */,
 			);
@@ -159,6 +164,7 @@
 		4C52D8761D69D8B200344750 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "iMegatron's Lab";
 				TargetAttributes = {
@@ -256,6 +262,7 @@
 				4C52D8891D69D8B200344750 /* ViewController.m in Sources */,
 				4C93DD041D69DBD1009ABD45 /* AlertTableViewCell.m in Sources */,
 				4C52D8861D69D8B200344750 /* AppDelegate.m in Sources */,
+				4CAA02721D6ADB920090BF1F /* MCIconAlertControllerManager.m in Sources */,
 				4C52D8831D69D8B200344750 /* main.m in Sources */,
 				4C93DCFD1D69DA90009ABD45 /* MCIconAlertController.m in Sources */,
 			);
