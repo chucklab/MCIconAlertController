@@ -37,7 +37,7 @@ static UIColor *buttonTitleColor() {
 }
 
 static const CGFloat MinBackgroundAlpha = .01f;
-static const CGFloat MaxBackgroundAlpha = .2f;
+static const CGFloat MaxBackgroundAlpha = .4f;
 
 static const CGFloat MinContentAlpha = .01f;
 static const CGFloat MaxContentAlpha = 1.f;
