@@ -259,17 +259,21 @@ static UIColor *buttonTitleColor() {
 
 #pragma mark - Actions.
 - (void)leftButtonTapped:(UIButton *)button {
-    [self dismissAnimation];
-    if (self.leftButtonTappedBlock) {
-        self.leftButtonTappedBlock();
-    }
+    __weak typeof(self) weakSelf = self;
+    [self dismissAnimationWithCompletion:^(){
+        if (weakSelf.leftButtonTappedBlock) {
+            weakSelf.leftButtonTappedBlock();
+        }
+    }];
 }
 
 - (void)rightButtonTapped:(UIButton *)button {
-    [self dismissAnimation];
-    if (self.rightButtonTappedBlock) {
-        self.rightButtonTappedBlock();
-    }
+    __weak typeof(self) weakSelf = self;
+    [self dismissAnimationWithCompletion:^(){
+        if (weakSelf.rightButtonTappedBlock) {
+            weakSelf.rightButtonTappedBlock();
+        }
+    }];
 }
 
 #pragma mark - Animations.
@@ -294,7 +298,7 @@ static UIColor *buttonTitleColor() {
                      }];
 }
 
-- (void)dismissAnimation {
+- (void)dismissAnimationWithCompletion:(void (^)())completion {
     self.alphaBackground.alpha = .5;
     self.contentView.alpha = 1.0;
     self.contentView.transform = CGAffineTransformMakeScale(1, 1);
@@ -316,6 +320,10 @@ static UIColor *buttonTitleColor() {
                           self.pageDidClosedBlock();
                           }
                           */
+                         
+                         if (completion) {
+                             completion();
+                         }
                      }];
 }
 
