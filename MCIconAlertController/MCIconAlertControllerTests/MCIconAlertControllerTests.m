@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MCIconAlertController.h"
+#import "MCIconAlertControllerManager.h"
 
 @interface MCIconAlertControllerTests : XCTestCase
 
@@ -51,7 +52,15 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
+    iconAlertController.pageDidClosedBlock = ^(){
+        NSLog(@"pageDidClosedBlock");
+    };
     XCTAssert(iconAlertController != nil);
+}
+
+- (void)testManager {
+    XCTAssert([MCIconAlertControllerManager sharedInstance]);
+    XCTAssert([MCIconAlertControllerManager sharedInstance].iconAlertControllerWindows);
 }
 
 
