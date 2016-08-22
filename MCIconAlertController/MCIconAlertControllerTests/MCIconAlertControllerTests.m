@@ -51,7 +51,6 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    [iconAlertController show];
     XCTAssert(iconAlertController != nil);
 }
 

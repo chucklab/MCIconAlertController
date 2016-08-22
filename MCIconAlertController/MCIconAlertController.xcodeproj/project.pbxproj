@@ -11,6 +11,8 @@
 		4C9938E91D69C65B0074849A /* MCIconAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9938E81D69C65B0074849A /* MCIconAlertControllerTests.m */; };
 		4CDCFBE81D69C6F000C9CB55 /* MCIconAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDCFBE61D69C6F000C9CB55 /* MCIconAlertController.h */; };
 		4CDCFBE91D69C6F000C9CB55 /* MCIconAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDCFBE71D69C6F000C9CB55 /* MCIconAlertController.m */; };
+		4CF374B91D6AEB9F009E431B /* MCIconAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF374B71D6AEB9F009E431B /* MCIconAlertControllerManager.m */; };
+		4CF374BA1D6AEB9F009E431B /* MCIconAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF374B81D6AEB9F009E431B /* MCIconAlertControllerManager.h */; };
 		72A2BE885298B6F9D02ECF5B /* libPods-MCIconAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235CC32D85491D61E68D8221 /* libPods-MCIconAlertController.a */; };
 		9FE60E00EF32B06BC80DCD96 /* libPods-MCIconAlertControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D847A99384AE78923E46B00D /* libPods-MCIconAlertControllerTests.a */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		4C9938EA1D69C65B0074849A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CDCFBE61D69C6F000C9CB55 /* MCIconAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCIconAlertController.h; sourceTree = "<group>"; };
 		4CDCFBE71D69C6F000C9CB55 /* MCIconAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCIconAlertController.m; sourceTree = "<group>"; };
+		4CF374B71D6AEB9F009E431B /* MCIconAlertControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCIconAlertControllerManager.m; sourceTree = "<group>"; };
+		4CF374B81D6AEB9F009E431B /* MCIconAlertControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCIconAlertControllerManager.h; sourceTree = "<group>"; };
 		4F4C990F02B1B3494E4A98AF /* Pods-MCIconAlertControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertControllerTests/Pods-MCIconAlertControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D798F3713B1BD69D2BB43943 /* Pods-MCIconAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCIconAlertController.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCIconAlertController/Pods-MCIconAlertController.release.xcconfig"; sourceTree = "<group>"; };
 		D847A99384AE78923E46B00D /* libPods-MCIconAlertControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCIconAlertControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,8 @@
 		4CDCFBE51D69C6F000C9CB55 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CF374B71D6AEB9F009E431B /* MCIconAlertControllerManager.m */,
+				4CF374B81D6AEB9F009E431B /* MCIconAlertControllerManager.h */,
 				4CDCFBE61D69C6F000C9CB55 /* MCIconAlertController.h */,
 				4CDCFBE71D69C6F000C9CB55 /* MCIconAlertController.m */,
 			);
@@ -137,6 +143,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF374BA1D6AEB9F009E431B /* MCIconAlertControllerManager.h in Headers */,
 				4CDCFBE81D69C6F000C9CB55 /* MCIconAlertController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDCFBE91D69C6F000C9CB55 /* MCIconAlertController.m in Sources */,
+				4CF374B91D6AEB9F009E431B /* MCIconAlertControllerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
