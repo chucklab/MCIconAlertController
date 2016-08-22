@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MCIconAlertController"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Alert controller with icon."
   s.description  = <<-DESC
   Alert controller with icon, have fun.
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/imegatron/MCIconAlertController.git", :tag => "#{s.version}" }
   s.source_files  = "Classes"
   s.exclude_files = "Classes/Exclude"
+  s.public_header_files = "Classes/*.h"
   s.frameworks = "Foundation", "UIKit"
   s.requires_arc = true
   s.dependency 'Masonry', '~> 1.0'
