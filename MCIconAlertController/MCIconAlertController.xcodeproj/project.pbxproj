@@ -12,7 +12,7 @@
 		4CDCFBE81D69C6F000C9CB55 /* MCIconAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDCFBE61D69C6F000C9CB55 /* MCIconAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CDCFBE91D69C6F000C9CB55 /* MCIconAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDCFBE71D69C6F000C9CB55 /* MCIconAlertController.m */; };
 		4CF374B91D6AEB9F009E431B /* MCIconAlertControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF374B71D6AEB9F009E431B /* MCIconAlertControllerManager.m */; };
-		4CF374BA1D6AEB9F009E431B /* MCIconAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF374B81D6AEB9F009E431B /* MCIconAlertControllerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CF374BA1D6AEB9F009E431B /* MCIconAlertControllerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF374B81D6AEB9F009E431B /* MCIconAlertControllerManager.h */; };
 		72A2BE885298B6F9D02ECF5B /* libPods-MCIconAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 235CC32D85491D61E68D8221 /* libPods-MCIconAlertController.a */; };
 		9FE60E00EF32B06BC80DCD96 /* libPods-MCIconAlertControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D847A99384AE78923E46B00D /* libPods-MCIconAlertControllerTests.a */; };
 /* End PBXBuildFile section */
@@ -143,8 +143,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF374BA1D6AEB9F009E431B /* MCIconAlertControllerManager.h in Headers */,
 				4CDCFBE81D69C6F000C9CB55 /* MCIconAlertController.h in Headers */,
+				4CF374BA1D6AEB9F009E431B /* MCIconAlertControllerManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
