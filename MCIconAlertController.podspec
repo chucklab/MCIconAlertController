@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MCIconAlertController"
-  s.version      = "0.0.5"
+  s.version      = "0.0.10"
   s.summary      = "Alert controller with icon."
   s.description  = <<-DESC
   Alert controller with icon, have fun.
