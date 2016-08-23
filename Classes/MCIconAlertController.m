@@ -42,9 +42,11 @@ static const CGFloat MaxBackgroundAlpha = .4f;
 static const CGFloat MinContentAlpha = .01f;
 static const CGFloat MaxContentAlpha = 1.f;
 
+typedef void (^MCPageDidClosedBlock)();
+
 @interface MCIconAlertController ()
 
-#pragma mark - UI.
+#pragma mark - Subviews.
 @property (nonatomic, strong) UIView      *alphaBackground;
 @property (nonatomic, strong) UIView      *contentView;
 @property (nonatomic, strong) UIImageView *icon;
@@ -52,6 +54,8 @@ static const CGFloat MaxContentAlpha = 1.f;
 @property (nonatomic, strong) UITextView  *messageTextView;
 @property (nonatomic, strong) UIButton    *leftButton;
 @property (nonatomic, strong) UIButton    *rightButton;
+
+@property (nonatomic, copy) MCPageDidClosedBlock pageDidClosedBlock;
 
 @end
 

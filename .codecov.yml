@@ -6,6 +6,7 @@ coverage:
   ignore:
     - "MCIconAlertController"
     - "Classes/*.m"
+    - "Classes/MCIconAlertControllerManager.*"
   precision: 2
   round: down
   range: "50...100"

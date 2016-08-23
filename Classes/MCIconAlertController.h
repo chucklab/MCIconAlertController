@@ -8,7 +8,6 @@
 
 typedef void (^MCLeftButtonTappedBlock)();
 typedef void (^MCRightButtonTappedBlock)();
-typedef void (^MCPageDidClosedBlock)();
 
 #import <UIKit/UIKit.h>
 
@@ -16,7 +15,6 @@ typedef void (^MCPageDidClosedBlock)();
 
 @property (nonatomic, copy) MCLeftButtonTappedBlock leftButtonTappedBlock;
 @property (nonatomic, copy) MCRightButtonTappedBlock rightButtonTappedBlock;
-@property (nonatomic, copy) MCPageDidClosedBlock pageDidClosedBlock;
 
 @property (nonatomic, strong) UIImage *iconImage;
 @property (nonatomic, copy) NSString *message;
