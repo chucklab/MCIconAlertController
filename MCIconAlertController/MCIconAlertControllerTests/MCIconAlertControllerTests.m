@@ -52,9 +52,6 @@
     iconAlertController.rightButtonTappedBlock = ^(){
         NSLog(@"rightButtonTappedBlock");
     };
-    iconAlertController.pageDidClosedBlock = ^(){
-        NSLog(@"pageDidClosedBlock");
-    };
     XCTAssert(iconAlertController != nil);
 }
 
