@@ -49,7 +49,7 @@ static const CGFloat MaxContentAlpha = 1.f;
 @property (nonatomic, strong) UIView      *contentView;
 @property (nonatomic, strong) UIImageView *icon;
 @property (nonatomic, strong) UILabel     *titleLabel;
-@property (nonatomic, strong) UILabel     *messageLabel;
+@property (nonatomic, strong) UITextView  *messageTextView;
 @property (nonatomic, strong) UIButton    *leftButton;
 @property (nonatomic, strong) UIButton    *rightButton;
 
@@ -79,7 +79,7 @@ static const CGFloat MaxContentAlpha = 1.f;
     [self contentView].hidden = YES;
     [self icon];
     [self titleLabel];
-    [self messageLabel];
+    [self messageTextView];
     [self leftButton];
     [self rightButton];
     
@@ -160,10 +160,6 @@ static const CGFloat MaxContentAlpha = 1.f;
     UILabel *titleLabel = [[UILabel alloc] init];
     _titleLabel = titleLabel;
     [self.contentView addSubview:titleLabel];
-    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(self.icon.mas_bottom).offset(40 / 2.f * Scale2X);
-        make.centerX.equalTo(self.icon);
-    }];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.font = font(18);
@@ -172,27 +168,20 @@ static const CGFloat MaxContentAlpha = 1.f;
     return _titleLabel;
 }
 
-- (UILabel *)messageLabel {
-    if (_messageLabel) {
-        return _messageLabel;
+- (UITextView *)messageTextView {
+    if (_messageTextView) {
+        return _messageTextView;
     }
     
-    UILabel *messageLabel = [[UILabel alloc] init];
-    _messageLabel = messageLabel;
-    [self.contentView addSubview:messageLabel];
-    [messageLabel mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(self.titleLabel.mas_bottom).offset(28 / 2.f * Scale2X);
-        make.centerX.equalTo(self.titleLabel);
-        make.left.mas_greaterThanOrEqualTo(messageLabel.superview).offset(10);
-        make.right.mas_lessThanOrEqualTo(messageLabel.superview).offset(-10);
-    }];
-    messageLabel.backgroundColor = [UIColor clearColor];
-    messageLabel.textColor = [UIColor blackColor];
-    messageLabel.font = font(14);
-    messageLabel.text = self.message;
-    messageLabel.numberOfLines = 0;
+    UITextView *messageTextView = [[UITextView alloc] init];
+    _messageTextView = messageTextView;
+    [self.contentView addSubview:messageTextView];
+    messageTextView.backgroundColor = [UIColor clearColor];
+    messageTextView.textColor = [UIColor blackColor];
+    messageTextView.font = font(14);
+    messageTextView.text = self.message;
     
-    return _messageLabel;
+    return _messageTextView;
 }
 
 - (UIButton *)leftButton {
@@ -204,7 +193,7 @@ static const CGFloat MaxContentAlpha = 1.f;
     _leftButton = leftButton;
     [self.contentView addSubview:leftButton];
     [leftButton mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(self.messageLabel.mas_bottom).offset(24 / 2.f * Scale2X);
+        make.top.equalTo(self.messageTextView.mas_bottom).offset(24 / 2.f * Scale2X);
         make.left.equalTo(self.contentView);
         make.bottom.equalTo(self.contentView);
         make.width.mas_equalTo(564 / 2.f * Scale2X / 2.f);
@@ -227,7 +216,7 @@ static const CGFloat MaxContentAlpha = 1.f;
     _rightButton = rightButton;
     [self.contentView addSubview:rightButton];
     [rightButton mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(self.messageLabel.mas_bottom).offset(24 / 2.f * Scale2X);
+        make.top.equalTo(self.messageTextView.mas_bottom).offset(24 / 2.f * Scale2X);
         make.right.equalTo(self.contentView);
         make.bottom.equalTo(self.contentView);
         make.width.mas_equalTo(564 / 2.f * Scale2X / 2.f);
@@ -261,6 +250,23 @@ static const CGFloat MaxContentAlpha = 1.f;
     lineView.backgroundColor = UIColorFromRGB(0xa9a9a9);
     
     return _rightButton;
+}
+
+- (void)viewDidLayoutSubviews {
+    [self.titleLabel sizeToFit];
+    [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make){
+        make.top.equalTo(self.icon.mas_bottom).offset(40 / 2.f * Scale2X);
+        make.centerX.equalTo(self.icon);
+        make.height.mas_equalTo(self.titleLabel.frame.size.height);
+    }];
+    
+    [self.messageTextView mas_remakeConstraints:^(MASConstraintMaker *make){
+        make.top.equalTo(self.titleLabel.mas_bottom).offset(28 / 2.f * Scale2X);
+        make.centerX.equalTo(self.titleLabel);
+        make.left.equalTo(self.messageTextView.superview).offset(10);
+        make.right.equalTo(self.messageTextView.superview).offset(-10);
+        make.height.mas_equalTo(self.messageTextView.contentSize.height);
+    }];
 }
 
 #pragma mark - Actions.
