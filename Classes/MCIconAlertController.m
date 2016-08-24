@@ -183,6 +183,7 @@ typedef void (^MCPageDidClosedBlock)();
     messageTextView.backgroundColor = [UIColor clearColor];
     messageTextView.textColor = [UIColor blackColor];
     messageTextView.font = font(14);
+    messageTextView.editable = NO;
     messageTextView.text = self.message;
     
     return _messageTextView;
