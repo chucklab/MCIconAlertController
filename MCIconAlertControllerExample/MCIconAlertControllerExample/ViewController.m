@@ -6,6 +6,8 @@
 //  Copyright © 2016 iMegatron's Lab. All rights reserved.
 //
 
+#import <Masonry.h>
+
 #import "ViewController.h"
 #import "MCIconAlertController.h"
 #import "AlertsTableView.h"
@@ -51,6 +53,10 @@
                 [self noMessage];
             } break;
                 
+            case 5: { // Custom view
+                [self customView];
+            } break;
+                
             default: {
                 [self normal];
             } break;
@@ -62,6 +68,7 @@
                             @"Long single line",
                             @"Very long text",
                             @"No message",
+                            @"Custom view",
                             ];
 }
 
@@ -148,6 +155,75 @@
         NSLog(@"leftButtonTappedBlock");
     };
     iconAlertController.rightButtonTappedBlock = ^(){
+        NSLog(@"rightButtonTappedBlock");
+    };
+    [iconAlertController show];
+}
+
+- (void)customView {
+    UIView *customView = [[UIView alloc] init];
+    customView.backgroundColor = [UIColor whiteColor];
+    customView.layer.cornerRadius = 10;
+    customView.clipsToBounds = YES;
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    [customView addSubview: imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make){
+        make.top.equalTo(customView).offset(83);
+        make.centerX.equalTo(customView);
+    }];
+    imageView.image = [UIImage imageNamed: @"img_dog_small"];
+    
+    UILabel *titleLabel = [[UILabel alloc] init];
+    [customView addSubview: titleLabel];
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make){
+        make.top.equalTo(imageView.mas_bottom).offset(31);
+        make.left.equalTo(customView).offset(38);
+        make.right.equalTo(customView).offset(-38);
+        make.width.equalTo(@170);
+    }];
+    titleLabel.text = @"Need your location";
+    titleLabel.numberOfLines = 0;
+    
+    UILabel *contentLabel = [[UILabel alloc] init];
+    [customView addSubview: contentLabel];
+    [contentLabel mas_makeConstraints:^(MASConstraintMaker *make){
+        make.top.equalTo(titleLabel.mas_bottom).offset(12);
+        make.left.right.width.equalTo(titleLabel);
+    }];
+    contentLabel.text = @"We need to know where you are in order to scan nearby centers";
+    contentLabel.numberOfLines = 0;
+    
+    UIButton *cancelButton = [UIButton buttonWithType: UIButtonTypeCustom];
+    [customView addSubview: cancelButton];
+    [cancelButton mas_makeConstraints:^(MASConstraintMaker *make){
+        make.left.bottom.equalTo(customView);
+        make.width.equalTo(customView).multipliedBy(0.5);
+        make.height.equalTo(@45);
+        make.top.equalTo(contentLabel.mas_bottom).offset(72);
+    }];
+    [cancelButton setTitleColor: [UIColor whiteColor] forState: UIControlStateNormal];
+    [cancelButton setBackgroundColor: [UIColor redColor]];
+    [cancelButton setTitle: @"Cancel" forState: UIControlStateNormal];
+
+    UIButton *okButton = [UIButton buttonWithType: UIButtonTypeCustom];
+    [customView addSubview: okButton];
+    [okButton mas_makeConstraints:^(MASConstraintMaker *make){
+        make.right.bottom.equalTo(customView);
+        make.top.width.height.equalTo(cancelButton);
+    }];
+    [okButton setTitleColor: [UIColor whiteColor] forState: UIControlStateNormal];
+    [okButton setBackgroundColor: [UIColor greenColor]];
+    [okButton setTitle: @"OK" forState: UIControlStateNormal];
+
+    MCIconAlertController *iconAlertController = [[MCIconAlertController alloc] init];
+    iconAlertController.customView = customView;
+    [iconAlertController registLeftButton: cancelButton];
+    [iconAlertController registRightButton: okButton];
+    iconAlertController.leftButtonTappedBlock = ^{
+        NSLog(@"leftButtonTappedBlock");
+    };
+    iconAlertController.rightButtonTappedBlock = ^{
         NSLog(@"rightButtonTappedBlock");
     };
     [iconAlertController show];

@@ -16,6 +16,8 @@ typedef void (^MCRightButtonTappedBlock)();
 @property (nonatomic, copy) MCLeftButtonTappedBlock leftButtonTappedBlock;
 @property (nonatomic, copy) MCRightButtonTappedBlock rightButtonTappedBlock;
 
+@property (nonatomic, strong) UIView *customView;
+
 @property (nonatomic, strong) UIImage *iconImage;
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy) NSString *leftButtonTitle;
@@ -23,6 +25,12 @@ typedef void (^MCRightButtonTappedBlock)();
 
 @property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
 
+#pragma mark - For custom view
+- (void)registLeftButton:(UIButton *) button;
+- (void)registRightButton:(UIButton *) button;
+
+#pragma mark - Publics
 - (void)show;
+- (void)dismissAnimationWithCompletion:(void (^)())completion;
 
 @end
