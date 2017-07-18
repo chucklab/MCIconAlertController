@@ -36,11 +36,13 @@ static UIColor *buttonTitleColor() {
     return UIColorFromRGB(0x337af0);
 }
 
-static const CGFloat MinBackgroundAlpha = .01f;
-static const CGFloat MaxBackgroundAlpha = .4f;
+static const CGFloat MinBackgroundAlpha = 0.01;
+static const CGFloat MaxBackgroundAlpha = 0.25;
 
-static const CGFloat MinContentAlpha = .01f;
-static const CGFloat MaxContentAlpha = 1.f;
+static const CGFloat MinContentAlpha = 0.01;
+static const CGFloat MaxContentAlpha = 1.0;
+
+static const CGFloat MaxBlurAlpha = 0.5;
 
 typedef void (^MCPageDidClosedBlock)();
 
@@ -48,6 +50,7 @@ typedef void (^MCPageDidClosedBlock)();
 
 #pragma mark - Subviews.
 @property (nonatomic, strong) UIView      *alphaBackground;
+@property (nonatomic, strong) UIVisualEffectView *effectView;
 @property (nonatomic, strong) UIView      *contentView;
 @property (nonatomic, strong) UIImageView *icon;
 @property (nonatomic, strong) UILabel     *titleLabel;
@@ -94,9 +97,13 @@ typedef void (^MCPageDidClosedBlock)();
     } else {
         _contentView.hidden = YES;
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear: animated];
     
     // Pop out animation
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         [self alphaBackground].hidden = NO;
         if (self.customView == nil) {
             [self contentView].hidden = NO;
@@ -105,7 +112,6 @@ typedef void (^MCPageDidClosedBlock)();
         }
         [self popOutAnimation];
     });
-    
 }
 
 #pragma mark - Setters
@@ -378,6 +384,22 @@ typedef void (^MCPageDidClosedBlock)();
 
 #pragma mark - Publics
 - (void)show {
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle: UIBlurEffectStyleLight];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect: blurEffect];
+    self.effectView = effectView;
+    [[UIApplication sharedApplication].keyWindow addSubview: effectView];
+    [effectView mas_makeConstraints:^(MASConstraintMaker *make){
+        make.edges.equalTo(effectView.superview);
+    }];
+    effectView.alpha = 0;
+    [UIView animateWithDuration: 0.3
+                          delay: 0
+                        options: UIViewAnimationOptionCurveEaseOut
+                     animations: ^{
+                         effectView.alpha = MaxBlurAlpha;
+                     } completion: nil];
+    
+    
     UIWindow *window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     __weak typeof(window) weakWindow = window;
     window.rootViewController = self;
@@ -427,6 +449,17 @@ typedef void (^MCPageDidClosedBlock)();
                          
                          if (completion) {
                              completion();
+                         }
+                     }];
+    
+    [UIView animateWithDuration: 0.3
+                          delay: 0
+                        options: UIViewAnimationOptionCurveEaseOut
+                     animations: ^{
+                         self.effectView.alpha = 0.0;
+                     } completion: ^(BOOL finished){
+                         if (self.effectView.superview) {
+                             [self.effectView removeFromSuperview];
                          }
                      }];
 }
