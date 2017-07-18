@@ -37,12 +37,12 @@ static UIColor *buttonTitleColor() {
 }
 
 static const CGFloat MinBackgroundAlpha = 0.01;
-static const CGFloat MaxBackgroundAlpha = 0.25;
+static const CGFloat MaxBackgroundAlpha = 0.02;
 
 static const CGFloat MinContentAlpha = 0.01;
 static const CGFloat MaxContentAlpha = 1.0;
 
-static const CGFloat MaxBlurAlpha = 0.5;
+static const CGFloat MaxBlurAlpha = 0.7;
 
 typedef void (^MCPageDidClosedBlock)();
 
@@ -384,7 +384,7 @@ typedef void (^MCPageDidClosedBlock)();
 
 #pragma mark - Publics
 - (void)show {
-    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle: UIBlurEffectStyleLight];
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle: UIBlurEffectStyleDark];
     UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect: blurEffect];
     self.effectView = effectView;
     [[UIApplication sharedApplication].keyWindow addSubview: effectView];
@@ -466,7 +466,8 @@ typedef void (^MCPageDidClosedBlock)();
 
 #pragma mark - UIViewController
 - (UIStatusBarStyle)preferredStatusBarStyle{
-    return self.statusBarStyle;
+    //return self.statusBarStyle;
+    return UIStatusBarStyleLightContent;
 }
 
 @end
