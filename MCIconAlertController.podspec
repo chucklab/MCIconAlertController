@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "MCIconAlertController"
-  s.version      = "0.0.14"
+  s.version      = "0.0.15"
   s.summary      = "Alert controller with icon."
   s.description  = <<-DESC
   Alert controller with icon, have fun.
                    DESC
-  s.homepage     = "https://github.com/imegatron/MCIconAlertController"
+  s.homepage     = "https://github.com/chucklab/MCIconAlertController"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author             = { "Chao Ma" => "mc@imegatron.com" }
-  s.platform     = :ios, '6.0'
-  s.ios.deployment_target = '6.0'
+  s.author             = { "Chuck MA" => "chuck@chucklab.com" }
+  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
   s.source       = { :git => "https://github.com/imegatron/MCIconAlertController.git", :tag => "#{s.version}" }
   s.source_files  = "Classes"
   s.exclude_files = "Classes/Exclude"
