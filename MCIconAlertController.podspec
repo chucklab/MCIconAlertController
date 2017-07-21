@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author             = { "Chuck MA" => "chuck@chucklab.com" }
   s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
-  s.source       = { :git => "https://github.com/imegatron/MCIconAlertController.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/chucklab/MCIconAlertController.git", :tag => "#{s.version}" }
   s.source_files  = "Classes"
   s.exclude_files = "Classes/Exclude"
   s.public_header_files = "Classes/*.h"
